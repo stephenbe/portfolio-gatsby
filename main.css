@@ -14,15 +14,31 @@
   max-width: 1600px;
 }
 
-.header {
-  background-color:#2196f3;
+canvas {
+  position:absolute;
+  height:calc(100vh - 115px);
 }
 
-.header:after {
-  content:"";
-  background-color:orange;
+.header {
+  position:relative;
+}
+
+.header__banner {
+  background-color:#2196f3;
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  top:calc(-100% - 15px);
+}
+
+.header__bannersmall {
+  position:absolute;
   height:15px;
-  display:block;
+  width:100%;
+  background-color:orange;
+  bottom:-15px;
 }
 
 .header__list {
@@ -33,8 +49,8 @@
 }
 
 .header__listitem {
-  padding-left:10px;
-  padding-right:10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header__listitem:last-child {
@@ -48,9 +64,18 @@
 }
 
 .header__portrait {
+  position:relative;
+  z-index: 2;
   border-width:4px;
   border-style:solid;
   border-color:white;
+  opacity:0;
+  background-color:#ff7d2f;
+}
+
+.header__nav {
+  position:relative;
+  z-index: 2;
 }
 
 .header__inner {
@@ -63,6 +88,13 @@
 .header__portrait {
   position: relative;
   top: 50px;
+  overflow:hidden;
+}
+
+.header__img {
+  display:block;
+  top:150px;
+  position:relative;
 }
 
 .intro {
@@ -88,12 +120,14 @@
   font-weight:300;
   font-size: 47px;
   color:#2196f3;
+  position:relative;
 }
 
 .intro__description {
   display:block;
   color:gray;
   font-size: 27px;
+  position:relative;
 }
 
 .intro__calltoaction {
@@ -131,19 +165,24 @@
   align-items: center;
   top: 0;
   left: 0;
+  pointer-events: none;
 }
 
 .box__portrait {
-  position:relative;
+  position:absolute;
   height:150px;
   width:150px;
+  border-width:4px;
+  border-style:solid;
+  border-color:white;
+  box-sizing:unset;
 }
 
 
 .box__dot {
   position:absolute;
   height:5px;
-  background-color:orange;
+  background-color:#ff7d2f;
   opacity:0;
 }
 
@@ -188,5 +227,15 @@
 
   left: 0;
   bottom: 0;
+  transform-origin: 0% 100%;
+}
+
+.box__dot--bottom {
+  width:150px;
+  bottom:0;
+  opacity:0;
+  height:150px;
+
+  transform: scaleY(0.03333);
   transform-origin: 0% 100%;
 }
