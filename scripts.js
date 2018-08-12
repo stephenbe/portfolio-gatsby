@@ -10,6 +10,7 @@ var intro = new TimelineLite();
 var $portrait = document.querySelector(".header__portrait");
 var $portraitImg = document.querySelector(".header__img");
 var $banner = document.querySelector(".header__banner");
+var $introBox = document.querySelector(".intro__box");
 var $introTitle = document.querySelector(".intro__title");
 var $introTCalltoaction = document.querySelector(".intro__calltoaction");
 var $introDescription = document.querySelector(".intro__description");
@@ -28,6 +29,7 @@ intro
   .to(box5, 0, {opacity:"1"}, "-=0.15")
   .to(box5, 0.5, {scaleY:1 , ease: Expo.easeOut},"-=0.15")
   .to(box, 0.5, {top:portraitOffsetTop, left: portraitOffsetLeft , ease: Expo.easeOut})
+  .to($introBox, 0, {opacity:1})
   .to(box, 0, {opacity:0}, "portraitBlend")
   .to($portrait, 0, {opacity:1}, "portraitBlend")
   .to($portraitImg, 0.8, {top:0, ease: Expo.easeOut}, "pickaboo")
@@ -37,3 +39,6 @@ intro
   .from($introTCalltoaction, 1, {opacity:0, top:10, ease: Expo.easeOut}, "pickaboo+=0.4")
 
 
+
+  var wallpaper = new TimelineLite();
+  wallpaper

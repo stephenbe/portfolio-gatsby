@@ -24,21 +24,21 @@ canvas {
 }
 
 .header__banner {
-  background-color:#2196f3;
+  background-color:#2c1b3d;
   position:absolute;
   top:0;
   left:0;
   height:100%;
   width:100%;
-  top:calc(-100% - 15px);
+  top:calc(-100% - 4px);
 }
 
 .header__bannersmall {
   position:absolute;
-  height:15px;
+  height:4px;
   width:100%;
-  background-color:orange;
-  bottom:-15px;
+  background-color:#655ed2;
+  bottom:-4px;
 }
 
 .header__list {
@@ -70,7 +70,7 @@ canvas {
   border-style:solid;
   border-color:white;
   opacity:0;
-  background-color:#ff7d2f;
+  background-color:#655ed2;
 }
 
 .header__nav {
@@ -99,7 +99,11 @@ canvas {
 
 .intro {
   font-family: 'Lato', sans-serif;
-  height:calc(100vh - 108px);
+  height:calc(100vh - 105px);
+  position:relative;
+  top:15px;
+
+
 }
 
 .intro__inner {
@@ -112,14 +116,26 @@ canvas {
 
 .intro__box {
   display:block;
+  opacity:0;
   text-align: center;
+
+  display: block;
+  text-align: center;
+  background-color: #ffffffbd;
+  position: relative;
+  box-shadow: 0px 0px 135px 65px #ffffff;
+}
+
+.intro__content {
+  position:relative;
+  z-index: 2;
 }
 
 .intro__title {
   font-family: 'Montserrat', sans-serif;
   font-weight:300;
   font-size: 47px;
-  color:#2196f3;
+  color:#2c1b3d;
   position:relative;
 }
 
@@ -132,7 +148,7 @@ canvas {
 
 .intro__calltoaction {
   position:relative;
-  background-color:#2196f3;
+  background-color:#2c1b3d;
   border-bottom:4px;
   color:white;
   padding:14px;
@@ -145,7 +161,7 @@ canvas {
 
 .intro__calltoaction:after {
   content:"";
-  background-color:orange;
+  background-color:#655ed2;
   height:4px;
   display:block;
   position:absolute;
@@ -182,7 +198,7 @@ canvas {
 .box__dot {
   position:absolute;
   height:5px;
-  background-color:#ff7d2f;
+  background-color:#655ed2;
   opacity:0;
 }
 
@@ -239,3 +255,152 @@ canvas {
   transform: scaleY(0.03333);
   transform-origin: 0% 100%;
 }
+
+
+.wallpaper {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 100%;
+}
+
+
+.wallpaper__icon {
+  width: 140px;
+  filter: grayscale(1);
+  opacity: 0.08;
+  transition-property: filter, opacity, transform;
+  transition-duration: 0.3s;
+
+  position:absolute;
+
+  /*transform: scale(0.8);*/
+}
+
+.wallpaper__icon:hover {
+  filter: grayscale(0);
+  opacity:1;
+}
+
+
+.wallpaper__icon--tall {
+  height:140px;
+  max-width:140px;
+}
+
+
+.wallpaper__icon--html5 {
+  width: 90px;
+  height: 90px;
+  left: -126px;
+  top: -271px;
+}
+
+.wallpaper__icon--sass {
+  width: 90px;
+  height: 70px;
+  left: 460px;
+  bottom: -118px;
+}
+
+.wallpaper__icon--typescript {
+  width: 145px;
+  height: 36px;
+  right: -303px;
+  top: -266px;
+}
+
+.wallpaper__icon--react {
+  width: 122px;
+  height: 86px;
+  right: -38px;
+  top: -247px;
+  opacity: 0.2;
+}
+
+
+
+.wallpaper__icon--babel {
+  left: -296px;
+  width: 110px;
+}
+
+.wallpaper__icon--gulp {
+  top: -300px;
+  left: 98px;
+  height: 97px;
+  width: auto;
+}
+
+.wallpaper__icon--grunt {
+  left: -30px;
+  height: 90px;
+  bottom: -137px;
+  width: 75px;
+}
+
+.wallpaper__icon--npm {
+  top: -35px;
+  right: -10px;
+  width: 90px;
+  height: 35px;
+}
+
+.wallpaper__icon--mysql {
+  bottom: -177px;
+  left: 130px;
+  height: 87px;
+}
+
+.wallpaper__icon--jquery {
+  bottom: -81px;
+  right: -54px;
+}
+
+.wallpaper__icon--git {
+  left: -124px;
+  top: 109px;
+  width: 94px;
+}
+
+.wallpaper__icon--angular {
+  top: -177px;
+  width: 73px;
+  left: -291px;
+}
+
+.wallpaper__icon--node {
+  right: -331px;
+  top: -35px;
+}
+
+.wallpaper__icon--atlassian {
+  left: -83px;
+  top: -75px;
+}
+
+.wallpaper__icon--php {
+  left: -222px;
+  top: 200px;
+  width: 90px;
+}
+
+.wallpaper__icon--github {
+  right: -162px;
+  top: -148px;
+  width: 90px;
+}
+
+.wallpaper__icon--jenkins {
+  right: -181px;
+  bottom: 81px;
+}
+
+.wallpaper__icon--wordpress {
+  top: -154px;
+  height: auto;
+  left: 89px;
+  width: 155px;
+}
+
