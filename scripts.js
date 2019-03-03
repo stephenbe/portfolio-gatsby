@@ -38,7 +38,5 @@
 //   .from($introDescription, 0.8, {opacity:0, top:10, ease: Expo.easeOut}, "pickaboo+=0.2")
 //   .from($introTCalltoaction, 1, {opacity:0, top:10, ease: Expo.easeOut}, "pickaboo+=0.4")
 
-
-
-  // var wallpaper = new TimelineLite();
-  // wallpaper
+// var wallpaper = new TimelineLite();
+// wallpaper
