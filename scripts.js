@@ -40,3 +40,14 @@
 
 // var wallpaper = new TimelineLite();
 // wallpaper
+
+var classname = document.getElementsByClassName("js-portfolio");
+
+var myFunction = function() {
+  var box = document.getElementsByTagName("body");
+  box.className = "gotoportfolio";
+};
+
+for (var i = 0; i < classname.length; i++) {
+  classname[i].addEventListener("click", myFunction, false);
+}
