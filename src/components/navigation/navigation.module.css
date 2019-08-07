@@ -1,4 +1,5 @@
 .nav {
+  margin-top: 60px;
   display: grid;
   justify-items: center;
 }
@@ -10,9 +11,6 @@
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   list-style: none;
-}
-
-.li {
 }
 
 .link {
@@ -27,4 +25,6 @@
   display: block;
   text-decoration: none;
   cursor: pointer;
+  color: #474747;
+  font-weight: 500;
 }
