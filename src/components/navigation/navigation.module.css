@@ -1,0 +1,30 @@
+.nav {
+  display: grid;
+  justify-items: center;
+}
+
+.ul {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  list-style: none;
+}
+
+.li {
+}
+
+.link {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 44px;
+  line-height: 44px;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
