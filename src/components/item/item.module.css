@@ -1,0 +1,13 @@
+.li {
+  vertical-align: center;
+  list-style: none;
+}
+
+.li:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: blue;
+  display: inline-block;
+  vertical-align: center;
+}
