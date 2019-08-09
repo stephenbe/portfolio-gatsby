@@ -2,6 +2,16 @@
   max-width: 600px;
   margin: 70px auto;
   text-align: center;
+  position: relative;
+}
+
+.svg {
+  position: absolute;
+  animation: herologoanimation1 4s linear infinite;
+}
+
+.svgHorizontal {
+  height: 45px;
 }
 
 .h1 {
@@ -13,5 +23,86 @@
 .p {
   font-size: 18px;
   line-height: 33px;
-  margin-top: 30px;
+  margin-top: 36px;
+}
+
+.deco {
+  width: 225px;
+  margin-top: 20px;
+}
+
+.sass {
+  top: 81%;
+  right: -9%;
+  width: 45px;
+  animation: herologoanimation2 6s linear infinite;
+}
+
+.react {
+  top: -14%;
+  left: -20%;
+  width: 51px;
+  animation: herologoanimation2 6s linear infinite;
+}
+
+.npm {
+  top: 17%;
+  left: -12%;
+  height: 12px;
+}
+
+.github {
+  top: 55%;
+  left: -34%;
+  width: 23px;
+}
+
+.vscode {
+  top: 5%;
+  right: -13%;
+  width: 28px;
+}
+
+.typescript {
+  top: 39%;
+  right: -33%;
+  width: 62px;
+  animation: herologoanimation2 6s linear infinite;
+}
+
+.angular {
+  top: 88%;
+  right: -38%;
+  width: 31px;
+}
+
+.html5 {
+  top: 73%;
+  left: -11%;
+  width: 30px;
+  animation: herologoanimation2 6s linear infinite;
+}
+
+.vue {
+  top: 10%;
+  left: -38%;
+  width: 27px;
+  animation: herologoanimation2 6s linear infinite;
+}
+@keyframes herologoanimation1 {
+  from {
+    transform: rotate(0deg) translateX(5px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(5px) rotate(-360deg);
+  }
+}
+
+@keyframes herologoanimation2 {
+  from {
+    transform: rotate(0deg) translateX(5px) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translateX(5px) rotate(360deg);
+  }
 }
