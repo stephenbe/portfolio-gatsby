@@ -1,0 +1,7 @@
+.section {
+  display: grid;
+  justify-self: center;
+  padding: 0;
+  max-width: 850px;
+  margin: 120px auto;
+}

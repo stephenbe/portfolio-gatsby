@@ -1,13 +1,25 @@
 .li {
-  vertical-align: center;
   list-style: none;
+  vertical-align: middle;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  grid-row-gap: 10px;
+}
+
+.span {
+  color: var(--black);
 }
 
 .li:before {
   content: "";
-  width: 6px;
-  height: 6px;
-  background-color: blue;
-  display: inline-block;
-  vertical-align: center;
+  width: 8px;
+  height: 8px;
+  background-color: currentColor;
+  border-radius: 2px;
+  margin-right: 10px;
+  vertical-align: middle;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
