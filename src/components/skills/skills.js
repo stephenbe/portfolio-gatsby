@@ -24,7 +24,7 @@ export default () => (
           <Item skillText="APIs" skillColor="var(--green)"></Item>
           <Item skillText="REST" skillColor="var(--green)"></Item>
           <Item skillText="Gulp" skillColor="var(--green)"></Item>
-          <Item skillText="Gulp" skillColor="var(--green)"></Item>
+          <Item skillText="Grunt" skillColor="var(--green)"></Item>
           <Item skillText="Webpack" skillColor="var(--green)"></Item>
           <Item skillText="NPM" skillColor="var(--green)"></Item>
           <Item skillText="Yarn" skillColor="var(--green)"></Item>
