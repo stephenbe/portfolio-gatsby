@@ -48,6 +48,5 @@ export default () => (
         </ul>
       </SkillCategory>
     </Section>
-    ;
   </div>
 )
