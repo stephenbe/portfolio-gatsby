@@ -6,7 +6,11 @@ export default () => (
     <Section sectionText="Blog">
       <article>
         <header>
-          <h3>The creation of this website with Gasby (ReactJS)</h3>
+          <h3>
+            <a href="https://www.google.com/">
+              The creation of this website with Gasby (ReactJS)
+            </a>
+          </h3>
 
           <time datetime="2019-08-02">2019-08-02 </time>
         </header>

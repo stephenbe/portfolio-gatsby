@@ -2,6 +2,10 @@
   margin-bottom: 30px;
 }
 
+.div:last-child {
+  margin-bottom: 0;
+}
+
 .title {
   font-size: 21;
   font-weight: 500;
