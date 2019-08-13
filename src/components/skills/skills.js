@@ -7,13 +7,15 @@ import skillStyles from "./skills.module.css"
 export default () => (
   <div>
     <Section sectionText="Skills">
-      <SkillCategory title="Languages">
+      <SkillCategory title="Languages &amp; Methodologies">
         <ul className={skillStyles.list}>
           <Item skillText="HTML" skillColor="var(--blue)"></Item>
           <Item skillText="CSS" skillColor="var(--blue)"></Item>
           <Item skillText="Sass" skillColor="var(--blue)"></Item>
           <Item skillText="JavaScript" skillColor="var(--blue)"></Item>
           <Item skillText="Typescript" skillColor="var(--blue)"></Item>
+          <Item skillText="Accessibility" skillColor="var(--blue)"></Item>
+          <Item skillText="BEM" skillColor="var(--blue)"></Item>
         </ul>
       </SkillCategory>
       <SkillCategory title="Tools, Libraries &amp; Framworks">
@@ -28,6 +30,7 @@ export default () => (
           <Item skillText="Webpack" skillColor="var(--green)"></Item>
           <Item skillText="NPM" skillColor="var(--green)"></Item>
           <Item skillText="Yarn" skillColor="var(--green)"></Item>
+          <Item skillText="Bootstrap" skillColor="var(--green)"></Item>
           <Item skillText="jQuery" skillColor="var(--green)"></Item>
           <Item skillText="MySQL" skillColor="var(--green)"></Item>
         </ul>
