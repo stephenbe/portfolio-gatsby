@@ -1,27 +1,23 @@
 import React from "react"
-import Section from "../section/section"
+import { Link } from "gatsby"
 
-export default () => (
+import BlogStyles from "./blog.module.css"
+
+export default props => (
   <div>
-    <Section sectionText="Blog">
-      <article>
-        <header>
-          <h3>
-            <a href="https://www.google.com/">
-              The creation of this website with Gasby (ReactJS)
-            </a>
-          </h3>
+    <article>
+      <header>
+        <h3>
+          <Link className={BlogStyles.title} to={props.blogPath}>
+            {props.blogTitle}
+          </Link>
+        </h3>
 
-          <time datetime="2019-08-02">2019-08-02 </time>
-        </header>
-        <p>
-          FlyGuys is a website that displays prices and details of flights. It
-          consists of an admin dashboard to provide staff with CRUD operations
-          (create, read, update a.
-        </p>
+        <time datetime="2019-08-02">{props.blogDate}</time>
+      </header>
+      <p>{props.blogExcerpt}</p>
 
-        <a href="https://www.google.com/">Read article</a>
-      </article>
-    </Section>
+      <Link to={props.blogPath}>Read article</Link>
+    </article>
   </div>
 )
