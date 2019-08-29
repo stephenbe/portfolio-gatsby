@@ -25,6 +25,6 @@
   display: block;
   text-decoration: none;
   cursor: pointer;
-  color: #474747;
+  color: var(--grey);
   font-weight: 500;
 }

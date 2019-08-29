@@ -4,20 +4,20 @@ import { Link } from "gatsby"
 import BlogStyles from "./blog.module.css"
 
 export default props => (
-  <div>
-    <article>
-      <header>
-        <h3>
-          <Link className={BlogStyles.title} to={props.blogPath}>
-            {props.blogTitle}
-          </Link>
-        </h3>
+  <article className={BlogStyles.article}>
+    <header>
+      <h3 className={BlogStyles.title}>
+        <Link className={BlogStyles.titlelink} to={props.blogPath}>
+          {props.blogTitle}
+        </Link>
+      </h3>
 
-        <time datetime="2019-08-02">{props.blogDate}</time>
-      </header>
-      <p>{props.blogExcerpt}</p>
+      <time className={BlogStyles.date} datetime="2019-08-02">
+        {props.blogDate}
+      </time>
+    </header>
+    <p className={BlogStyles.description}>{props.blogExcerpt}</p>
 
-      <Link to={props.blogPath}>Read article</Link>
-    </article>
-  </div>
+    <Link to={props.blogPath}>Read article</Link>
+  </article>
 )
