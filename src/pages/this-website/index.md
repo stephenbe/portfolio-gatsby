@@ -4,4 +4,4 @@ date: 2017-07-12T17:12:33.962Z
 title: "This website"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare bibendum mi id ornare. Sed lacinia sit amet enim quis lacinia. Aenean sit
+FlyGuys is a website that displays prices and details of flights. It consists of an admin dashboard to provide staff with CRUD operations (create, read, update a.

@@ -18,6 +18,8 @@ export default props => (
     </header>
     <p className={BlogStyles.description}>{props.blogExcerpt}</p>
 
-    <Link to={props.blogPath}>Read article</Link>
+    <Link className={BlogStyles.link} to={props.blogPath}>
+      Read article
+    </Link>
   </article>
 )
