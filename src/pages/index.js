@@ -5,6 +5,7 @@ import Hero from "../components/hero/hero"
 import Skills from "../components/skills/skills"
 import Blog from "../components/blog/blog"
 import Section from "../components/section/section"
+import Footer from "../components/footer/footer"
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
@@ -26,6 +27,7 @@ export default function Index({ data }) {
             )
           })}
       </Section>
+      <Footer></Footer>
     </Container>
   )
 }
