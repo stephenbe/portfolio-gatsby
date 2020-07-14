@@ -6,6 +6,18 @@
   padding-left: 0;
 }
 
+@media (max-width: 767px) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .skills div:last-child {
   margin-bottom: 0;
 }

@@ -16,7 +16,6 @@ export default () => (
             <Item skillText="JavaScript" skillColor="var(--blue)"></Item>
             <Item skillText="Typescript" skillColor="var(--blue)"></Item>
             <Item skillText="Accessibility" skillColor="var(--blue)"></Item>
-            <Item skillText="BEM" skillColor="var(--blue)"></Item>
           </ul>
         </SkillCategory>
         <SkillCategory title="Tools, Libraries &amp; Framworks">
@@ -24,6 +23,8 @@ export default () => (
             <Item skillText="Git/Github" skillColor="var(--green)"></Item>
             <Item skillText="React" skillColor="var(--green)"></Item>
             <Item skillText="Angular" skillColor="var(--green)"></Item>
+            <Item skillText="StencilJS" skillColor="var(--green)"></Item>
+            <Item skillText="JSX" skillColor="var(--green)"></Item>
             <Item skillText="APIs" skillColor="var(--green)"></Item>
             <Item skillText="REST" skillColor="var(--green)"></Item>
             <Item skillText="Gulp" skillColor="var(--green)"></Item>

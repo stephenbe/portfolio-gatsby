@@ -13,7 +13,9 @@ import Logovue from "../../../static/assets/logo-vue.svg"
 
 export default () => (
   <div className={HeroStyles.hero}>
-    <h1 className={HeroStyles.h1}>Stephen Bégay ~ Front-End Developer</h1>
+    <h1 className={HeroStyles.h1}>
+      Stephen Bégay<span> ~ </span>Front-End Developer
+    </h1>
     <p className={HeroStyles.p}>
       Passionate about web development. My fascination for new technologies
       always motivated me to learn more.

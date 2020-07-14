@@ -12,6 +12,12 @@
   list-style: none;
 }
 
+@media (max-width: 500px) {
+  .inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .link {
   background: transparent;
   border: none;

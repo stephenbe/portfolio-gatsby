@@ -11,6 +11,12 @@
   animation: herologoanimation1 4s linear infinite;
 }
 
+@media (max-width: 1180px) {
+  .svg {
+    display: none;
+  }
+}
+
 .svgHorizontal {
   height: 45px;
 }
@@ -19,6 +25,12 @@
   color: #00a3f3;
   font-weight: 500;
   font-size: 34px;
+}
+
+@media (max-width: 768px) {
+  .h1 span {
+    display: block;
+  }
 }
 
 .p {
