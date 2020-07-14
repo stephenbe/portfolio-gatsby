@@ -13,6 +13,10 @@ export default function HTML(props) {
           href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap"
           rel="stylesheet"
         ></link>
+
+        <link rel="icon" href="../assets/favicon.png" />
+
+        <meta name="msapplication-TileColor" content="#0dac8b" />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
