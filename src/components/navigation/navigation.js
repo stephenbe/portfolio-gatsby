@@ -5,7 +5,9 @@ export default () => (
   <nav className={NavigationStyles.nav}>
     <ul className={NavigationStyles.ul}>
       <li>
-        <button className={NavigationStyles.link}>Articles</button>
+        <a href="" className={NavigationStyles.link}>
+          Blog
+        </a>
       </li>
       <li>
         <a className={NavigationStyles.link} href="https://www.google.com/">

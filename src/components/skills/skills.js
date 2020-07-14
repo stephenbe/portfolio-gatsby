@@ -40,8 +40,6 @@ export default () => (
           <ul className={skillStyles.list}>
             <Item skillText="VScode" skillColor="var(--pink)"></Item>
             <Item skillText="Github" skillColor="var(--pink)"></Item>
-            <Item skillText="Photoshop" skillColor="var(--pink)"></Item>
-            <Item skillText="Illustrator" skillColor="var(--pink)"></Item>
             <Item skillText="Adobe XD" skillColor="var(--pink)"></Item>
             <Item skillText="Bitbucket" skillColor="var(--pink)"></Item>
             <Item skillText="Jira" skillColor="var(--pink)"></Item>

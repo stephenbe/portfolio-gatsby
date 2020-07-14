@@ -16,8 +16,7 @@ export default () => (
     <h1 className={HeroStyles.h1}>Stephen Bégay ~ Front-End Developer</h1>
     <p className={HeroStyles.p}>
       Passionate about web development. My fascination for new technologies
-      always motivated me to learn more. As such, I enjoy taking on new
-      challenges.
+      always motivated me to learn more.
     </p>
 
     <IconDecoration className={HeroStyles.deco}></IconDecoration>

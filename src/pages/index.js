@@ -3,19 +3,19 @@ import { graphql } from "gatsby"
 import Container from "../components/container/container"
 import Hero from "../components/hero/hero"
 import Skills from "../components/skills/skills"
-import Blog from "../components/blog/blog"
-import Section from "../components/section/section"
+// import Blog from "../components/blog/blog"
+// import Section from "../components/section/section"
 import Footer from "../components/footer/footer"
 
 export default function Index({ data }) {
-  const { edges: posts } = data.allMarkdownRemark
+  // const { edges: posts } = data.allMarkdownRemark
   return (
     <Container>
       <Hero></Hero>
       <Skills></Skills>
-      <Section sectionText="Blog">
+      {/* <Section sectionText="Blog">
         {posts
-          .filter(post => post.node.frontmatter.title.length > 0)
+          .filter((post) => post.node.frontmatter.title.length > 0)
           .map(({ node: post }) => {
             return (
               <Blog
@@ -26,7 +26,7 @@ export default function Index({ data }) {
               ></Blog>
             )
           })}
-      </Section>
+      </Section> */}
       <Footer></Footer>
     </Container>
   )
@@ -41,7 +41,7 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY")
             path
           }
         }
